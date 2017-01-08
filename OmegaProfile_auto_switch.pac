@@ -18,6 +18,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)google\.com\./.test(host)) return "+proxy";
         if (/(?:^|\.)qt\.io$/.test(host)) return "+proxy";
         if (/(?:^|\.)github\.com$/.test(host)) return "+proxy";
+        if (/(?:^|\.)teamviewer\.com$/.test(host)) return "+proxy";
         return "DIRECT";
     },
     "+proxy": function(url, host, scheme) {
